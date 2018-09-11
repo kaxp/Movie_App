@@ -1,0 +1,56 @@
+<LinearLayout android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#5d2f4c"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/expand_menu"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_menu_black"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_films"
+            android:layout_marginLeft="80dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/img_more"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_expand_more_black"
+            />
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_search_black_24dp"
+            android:layout_marginLeft="85dp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        tools:listitem ="@layout/list_item"
+        android:id="@+id/rv_movies"
+        android:layout_width="match_parent"
+        android:background="#e0f2f2"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
